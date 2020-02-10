@@ -8,14 +8,14 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>python | 邓彩霞的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一周​    第一周的课程，首先了解了python的发展历史、特点以及其优缺点；之后开始讲一些简单的入门内容。 Hello World生活需要仪式感，先来个欢迎界面。 1print(&quot;hello world&quot;)  定义变量例11name &#x3D; &quot;Deng CaiXia2print(&quot;my name si&quot;,name)  例21name &#x3D; &quot;Du ZhiWang&quot;2name2 &#x3D; name3nam">
+  <meta name="description" content="Python前奏首先了解python的发展历史、特点以及其优缺点；之后学习一些简单的入门内容。 Hello World生活需要仪式感，先来个欢迎界面。 1print(&quot;hello world&quot;)  定义变量例11name &#x3D; &quot;Deng CaiXia2print(&quot;my name si&quot;,name)  例21name &#x3D; &quot;Du ZhiWang&quot;2name2 &#x3D; name3name &#x3D; &quot;Deng">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;10&#x2F;python&#x2F;index.html">
 <meta property="og:site_name" content="邓彩霞的博客">
-<meta property="og:description" content="第一周​    第一周的课程，首先了解了python的发展历史、特点以及其优缺点；之后开始讲一些简单的入门内容。 Hello World生活需要仪式感，先来个欢迎界面。 1print(&quot;hello world&quot;)  定义变量例11name &#x3D; &quot;Deng CaiXia2print(&quot;my name si&quot;,name)  例21name &#x3D; &quot;Du ZhiWang&quot;2name2 &#x3D; name3nam">
+<meta property="og:description" content="Python前奏首先了解python的发展历史、特点以及其优缺点；之后学习一些简单的入门内容。 Hello World生活需要仪式感，先来个欢迎界面。 1print(&quot;hello world&quot;)  定义变量例11name &#x3D; &quot;Deng CaiXia2print(&quot;my name si&quot;,name)  例21name &#x3D; &quot;Du ZhiWang&quot;2name2 &#x3D; name3name &#x3D; &quot;Deng">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-01-11T12:58:14.449Z">
+<meta property="og:updated_time" content="2020-02-10T13:42:58.209Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="邓彩霞的博客" type="application/atom+xml">
@@ -172,7 +172,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第一周"><a href="#第一周" class="headerlink" title="第一周"></a>第一周</h1><p>​    第一周的课程，首先了解了python的发展历史、特点以及其优缺点；之后开始讲一些简单的入门内容。</p>
+        <h1 id="Python前奏"><a href="#Python前奏" class="headerlink" title="Python前奏"></a>Python前奏</h1><p>首先了解python的发展历史、特点以及其优缺点；之后学习一些简单的入门内容。</p>
 <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>生活需要仪式感，先来个欢迎界面。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">print(<span class="string">"hello world"</span>)</span></pre></td></tr></table></figure>
 
@@ -204,10 +204,86 @@
 <h3 id="guess-任性玩"><a href="#guess-任性玩" class="headerlink" title="guess_任性玩"></a>guess_任性玩</h3><p>当输入次数达3次仍没有正确，将询问是否要继续进行，由参与者决定进行多少次。</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">age_of_oldboy = <span class="number">56</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">count = <span class="number">0</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> count &lt;<span class="number">3</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    guess_age = int(input(<span class="string">"guess age:"</span>))</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	<span class="keyword">if</span> guess_age == age_of_oldboy:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		print(<span class="string">"you got it !"</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">		<span class="keyword">break</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">	<span class="keyword">elif</span> guess_age &gt; age_of_oldboy:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">		print(think smaller...)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">	<span class="keyword">else</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">		print(think bigger...)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">	count +=<span class="number">1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> count == <span class="number">3</span>:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">	countine_confirm = input(<span class="string">"do you want to keep guessing"</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">	<span class="keyword">if</span> countine_confirm != <span class="string">'n'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">		count = <span class="number">0</span></span></pre></td></tr></table></figure>
 
-
-
-
-
+<h1 id="21天的Python分布爬虫之路"><a href="#21天的Python分布爬虫之路" class="headerlink" title="21天的Python分布爬虫之路"></a>21天的Python分布爬虫之路</h1><p>我是自己找了个视频课程跟着学的，其中会讲到开发工具的安装和所需环境。整个学习内容框架如下：</p>
+<ul>
+<li>章节01-爬虫前奏<ul>
+<li>什么是网络爬虫</li>
+<li>HTTP协议介绍</li>
+<li>抓包工具的使用网络请求</li>
+</ul>
+</li>
+<li>章节02-网络请求<ul>
+<li>urlopen函数的用法</li>
+<li>urlretrieve函数的用法</li>
+<li>参数编码和解码函数</li>
+<li>urlparse和uelsplit函数的用法</li>
+<li>实战-用Request爬取拉勾网职位信息</li>
+<li>作业-内涵段子爬虫作业</li>
+<li>ProxyHandler实现代理</li>
+<li>cookie原理和格式详解</li>
+<li>实战-爬虫使用cookie模拟登录</li>
+<li>实战-爬虫自动登录访问授权页面</li>
+<li>requests库的基本使用</li>
+<li>requests发送post请求</li>
+<li>requests使用代理</li>
+<li>requests处理cookie信息</li>
+<li>requests处理不信任的ssl证书</li>
+</ul>
+</li>
+<li>章节03-数据解析<ul>
+<li>xpath介绍和安装</li>
+<li>xpath语法详解</li>
+<li>lxml解析html代码和文件</li>
+<li>lxml和xpath结合使用详解</li>
+<li>实战-豆瓣电影爬虫</li>
+<li>实战-电影天堂爬虫之网页分析</li>
+<li>实战-电影天堂爬虫之爬取详情页</li>
+<li>实战-电影天堂爬虫之解析详情页</li>
+<li>实战-电影天堂爬虫之爬虫完成</li>
+<li>作业-腾讯招聘网爬虫作业</li>
+<li>bs4库的基本介绍</li>
+<li>bs4库的基本使用</li>
+<li>bs4库提取数据详解</li>
+<li>css常用选择器介绍</li>
+<li>select和css选择器提取元素</li>
+<li>bs4库拾遗</li>
+<li>实战-中国天气网爬虫之页面分析</li>
+<li>实战-中国天气网爬虫之华北城市数据爬取</li>
+<li>实战-中国天气网爬虫之所有城市数据爬取</li>
+<li>实战-中国天气网爬虫之数据可视化</li>
+<li>单字符匹配规则</li>
+<li>匹配多个字符</li>
+<li>常用匹配小案例</li>
+<li>开始结束和或语法</li>
+<li>转义字符和原生字符串</li>
+<li>group分组</li>
+<li>re模块常用函数</li>
+<li>实战-古诗文网爬虫实战</li>
+<li>作业-糗事百科爬虫作业</li>
+</ul>
+</li>
+<li>章节04-数据储存<ul>
+<li>json字符串介绍</li>
+<li>dump成json字符串以及编码问题</li>
+<li>load成Python对象</li>
+<li>读取csv文件的两种方式</li>
+<li>写入csv文件的两种方式</li>
+<li>windows下安装MySQL数据库</li>
+<li>使用软件和代码连接数据库</li>
+<li>使用代码插入数据的两种方式</li>
+<li>使用代码查找数据的三种方式</li>
+<li>使用代码删除和更新数据</li>
+<li>mongodb数据库的安装</li>
+<li>mongodb数据库启动和连接</li>
+<li>将mongodb制作成服务</li>
+<li>mongodb常用概念介绍</li>
+<li>mongodb的基本操作命令</li>
+<li>python操作mongodb</li>
+</ul>
+</li>
+<li>章节05-爬虫进阶</li>
+<li>章节06-Scrapy</li>
+</ul>
 
       
 
