@@ -380,28 +380,74 @@
 </ul>
 </li>
 <li><h3 id="HTTP协议介绍"><a href="#HTTP协议介绍" class="headerlink" title="HTTP协议介绍"></a>HTTP协议介绍</h3><h4 id="一、什么是http和https协议"><a href="#一、什么是http和https协议" class="headerlink" title="一、什么是http和https协议"></a>一、什么是http和https协议</h4><ul>
-<li>http协议：全称是HyperText Transfer Protocol，中文意思是超文本传输协议，是一种发布和接受html页面的方法，服务器端口号为80端口。</li>
-<li>https协议：是http协议的加密版本，在http下加入了SSL层，服务器端口号为443端口。</li>
+<li><code>http</code>协议：全称是<code>HyperText Transfer Protocol</code>，中文意思是超文本传输协议，是一种发布和接受<code>html</code>页面的方法，服务器端口号为80端口。</li>
+<li><code>https</code>协议：是<code>http</code>协议的加密版本，在<code>http</code>下加入了<code>SSL</code>层，服务器端口号为443端口。</li>
 </ul>
 <h4 id="二、url详解"><a href="#二、url详解" class="headerlink" title="二、url详解"></a>二、url详解</h4><ul>
 <li><img src="/2020/01/10/Python/1.png" alt="图1"></li>
 </ul>
-<h4 id="三、常用请求方法"><a href="#三、常用请求方法" class="headerlink" title="三、常用请求方法"></a>三、常用请求方法</h4><p>在http协议中，定义了8种请求方法。最常用的是get请求和post请求。</p>
+<h4 id="三、常用请求方法"><a href="#三、常用请求方法" class="headerlink" title="三、常用请求方法"></a>三、常用请求方法</h4><p>在<code>http</code>协议中，定义了8种请求方法。最常用的是<code>get</code>请求和```post``请求。</p>
 <ul>
-<li>get请求：一般情况下，只从服务器上获取数据下来，并不对服务器资源产生任何影响的时候会使用get请求。</li>
-<li>post请求：向服务器发送数据（或登录）、上传文件等，会对服务器资源产生影响的时候会使用post请求。</li>
+<li><code>get</code>请求：一般情况下，只从服务器上获取数据下来，并不对服务器资源产生任何影响的时候会使用<code>get</code>请求。</li>
+<li><code>post</code>请求：向服务器发送数据（或登录）、上传文件等，会对服务器资源产生影响的时候会使用<code>post</code>请求。</li>
 </ul>
-<p>以上是</p>
+<p>以上是在网站开发中常用的两种方法，并且一般情况下都会遵循使用规则，但有些网站为了做反爬虫机制，也经常会不按常理出牌，比如一个应该用<code>get</code>方法的请求就一定要改成<code>post</code>请求，这个要根据情况而定。</p>
+<h4 id="四、请求头常见参数"><a href="#四、请求头常见参数" class="headerlink" title="四、请求头常见参数"></a>四、请求头常见参数</h4><ul>
+<li><img src="/2020/01/10/Python/2.png" alt="图片2"></li>
+</ul>
+<h4 id="五、常见响应状态码"><a href="#五、常见响应状态码" class="headerlink" title="五、常见响应状态码"></a>五、常见响应状态码</h4><ul>
+<li><img src="/2020/01/10/Python/3.png" alt="图片3"></li>
+</ul>
 </li>
-<li><h3 id="抓包工具的使用网络请求"><a href="#抓包工具的使用网络请求" class="headerlink" title="抓包工具的使用网络请求"></a>抓包工具的使用网络请求</h3></li>
+<li><h3 id="抓包工具的使用网络请求"><a href="#抓包工具的使用网络请求" class="headerlink" title="抓包工具的使用网络请求"></a>抓包工具的使用网络请求</h3><ul>
+<li><code>Chrome</code>浏览器是一个非常亲近开发者的浏览器，可以方便查看网络请求以及发送的参数等信息，打开网页‘右键-&gt;检查’。</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><h2 id="章节02-网络请求"><a href="#章节02-网络请求" class="headerlink" title="章节02-网络请求"></a>章节02-网络请求</h2><ul>
-<li><h3 id="urlopen函数的用法"><a href="#urlopen函数的用法" class="headerlink" title="urlopen函数的用法"></a>urlopen函数的用法</h3></li>
-<li><h3 id="urlretrieve函数的用法"><a href="#urlretrieve函数的用法" class="headerlink" title="urlretrieve函数的用法"></a>urlretrieve函数的用法</h3></li>
-<li><h3 id="参数编码和解码函数"><a href="#参数编码和解码函数" class="headerlink" title="参数编码和解码函数"></a>参数编码和解码函数</h3></li>
-<li><h3 id="urlparse和uelsplit函数的用法"><a href="#urlparse和uelsplit函数的用法" class="headerlink" title="urlparse和uelsplit函数的用法"></a>urlparse和uelsplit函数的用法</h3></li>
-<li><h3 id="实战-用Request爬取拉勾网职位信息"><a href="#实战-用Request爬取拉勾网职位信息" class="headerlink" title="实战-用Request爬取拉勾网职位信息"></a>实战-用Request爬取拉勾网职位信息</h3></li>
+<li><h3 id="urllib库"><a href="#urllib库" class="headerlink" title="urllib库"></a>urllib库</h3><ul>
+<li><code>urllib</code>库是<code>python</code>中一个基本的网络请求库，可以模拟浏览器的行为，向指定的服务器发送一个请求，并且可以保存服务器返回的数据。</li>
+</ul>
+</li>
+<li><h3 id="urlopen函数的用法"><a href="#urlopen函数的用法" class="headerlink" title="urlopen函数的用法"></a>urlopen函数的用法</h3><ul>
+<li><p>在<code>Python3</code>中的<code>urllib</code>库中，所有和网络请求相关的方法，都被收集到<code>urllib.request</code>模块下面了，先来看看<code>urlopen</code>函数的基本使用：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> request</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">resp = request.urlopen(<span class="string">'http://www.baidu.com'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">print(resp.read())</span></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>实际上，使用浏览器访问百度，右键查看源代码，会发现源代码与我们打印出来的数据是一样的，也就是说，上面的代码就已经把百度首页的全部代码爬取下来了，可见一个基本的url请求用<code>Python</code>写真的很简单。<code>urlopen</code>详解：</p>
+<ul>
+<li><img src="/2020/01/10/Python/4.png" alt="图片4"></li>
+</ul>
+</li>
+<li><h3 id="urlretrieve函数的用法"><a href="#urlretrieve函数的用法" class="headerlink" title="urlretrieve函数的用法"></a>urlretrieve函数的用法</h3><ul>
+<li><p>这个函数可以方便地将网页上的一个文件保存到本地。下面我们来爬取百度首页并把它下载到本地：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> request</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">request.urlretrieve(<span class="string">'http://www.baidu.com'</span>,<span class="string">'baidu.html'</span>)</span></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><h3 id="参数编码和解码"><a href="#参数编码和解码" class="headerlink" title="参数编码和解码"></a>参数编码和解码</h3><ul>
+<li><h4 id="urlencode函数的用法"><a href="#urlencode函数的用法" class="headerlink" title="urlencode函数的用法"></a>urlencode函数的用法</h4></li>
+</ul>
+<p>用浏览器发送请求时，如果url中包含了中文或其他特殊字符，那么浏览器会自动地给我们提示，而如果用代码发送请求，那么就必须手动进行编码，这时候就使用<code>urlencode</code>函数来实现。<code>urlencode</code>可以把字典数据转换为<code>URL</code>编码的数据，示例代码如下：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">data = &#123;<span class="string">"name"</span>:<span class="string">'爬虫基础'</span>,<span class="string">'greet'</span>:<span class="string">'hello world'</span>,<span class="string">'age'</span>:<span class="number">100</span>&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">qs = parse.urlencode(data)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">print(qs)</span></pre></td></tr></table></figure>
+
+<ul>
+<li><h4 id="parse-qs函数的用法"><a href="#parse-qs函数的用法" class="headerlink" title="parse_qs函数的用法"></a>parse_qs函数的用法</h4></li>
+</ul>
+<p>可以将编码后的<code>url</code>进行解码，示例代码如下：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> parse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">qs = <span class="string">"name=%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80&amp;greet=hello+world&amp;age=100"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">print(parse.parse_qs(qs))</span></pre></td></tr></table></figure>
+</li>
+<li><h3 id="urlparse和uelsplit函数的用法"><a href="#urlparse和uelsplit函数的用法" class="headerlink" title="urlparse和uelsplit函数的用法"></a>urlparse和uelsplit函数的用法</h3><p>拿到一个<code>url</code>，想要对其进行组成部分的分割，这时候可以使用<code>urlparse</code>或者<code>urlsplit</code>进行分割，示例代码如下：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> request,parse</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">url = <span class="string">'http://www.baidu.com/s?username=zhiliao'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">result = parse.urlsplit(url)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 或者 result = parse.urlparse(url)</span></span></pre></td></tr></table></figure>
+</li>
+<li><h3 id="实战-用Request爬取拉勾网职位信息"><a href="#实战-用Request爬取拉勾网职位信息" class="headerlink" title="实战-用Request爬取拉勾网职位信息"></a>实战-用Request爬取拉勾网职位信息</h3><ul>
+<li><h4 id="request-Request类"><a href="#request-Request类" class="headerlink" title="request.Request类"></a>request.Request类</h4><p>如果想要在请求中加入请求头，就必须要使用<code>request.Request</code>类来实现，下列示例增加一个<code>User-Agent</code>:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib <span class="keyword">import</span> request</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">url = <span class="string">'https://www.lgstatic.com/lg-www-fed/search-result/modules/positions/img/approve_aae725a.png'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">headers = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	<span class="string">"User-Agent"</span>:<span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">req = request.Request(url,headers=headers)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">resp = request.urlopen(req)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">print(resp.read())</span></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
 <li><h3 id="作业-内涵段子爬虫作业"><a href="#作业-内涵段子爬虫作业" class="headerlink" title="作业-内涵段子爬虫作业"></a>作业-内涵段子爬虫作业</h3></li>
 <li><h3 id="ProxyHandler实现代理"><a href="#ProxyHandler实现代理" class="headerlink" title="ProxyHandler实现代理"></a>ProxyHandler实现代理</h3></li>
 <li><h3 id="cookie原理和格式详解"><a href="#cookie原理和格式详解" class="headerlink" title="cookie原理和格式详解"></a>cookie原理和格式详解</h3></li>
